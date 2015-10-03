@@ -21,7 +21,7 @@ angular.module('calculadoraApp')
     $scope.operacionTexto = '';
       
     $scope.operaciones = {
-        '+': Mathservice.sumar
+        '+': Mathservice.sumar        
     };
       
     //Codigo principal
@@ -37,6 +37,7 @@ angular.module('calculadoraApp')
             }  
         }, true);   
     };
+      
     
     //funcion que usa un wath para limitar la longitud de un campo
     $scope.limitarCampo = function(modelo,longitud){        
