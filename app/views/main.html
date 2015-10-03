@@ -1,0 +1,28 @@
+<div>
+    <div class="panel-titulo">
+        <h3 class="titulo">
+            {{mensajeInicial}}
+        </h3>
+    </div>    
+    <div class="panel-numeros">       
+        <input ng-model="numero1" type="number" class="estilo-numero" />
+        <span class="operacion-texto">
+            {{operacionTexto}}
+        </span>
+        <input ng-model="numero2" type="number" class="estilo-numero" />
+        <span class="operacion-texto">
+            =
+        </span>
+        <span class="resultado" id="resultado"> 
+            {{resultado}} 
+        </span>   
+    </div>
+    <div class="panel-botones">
+        <div class="btn-group">
+            <label class="btn btn-primary" ng-click="seleccionarOperacion('+')" ng-class="{'active':operacionTexto == '+'}">Sumar</label>
+            <label class="btn btn-primary" >Restar</label>
+            <label class="btn btn-primary" >Multiplicar</label>
+            <label class="btn btn-primary" >Dividir</label>
+        </div>
+    </div>
+</div>
