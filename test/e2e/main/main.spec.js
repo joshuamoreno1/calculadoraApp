@@ -16,7 +16,10 @@ describe('calculadora App', function() {
         ptor.sleep(2000);         
         element(by.model('sumarBoton')).click().then(function() {
            element(by.model("numero1")).sendKeys(2);
-           element(by.model("numero2")).sendKeys(2);           
+           element(by.model("numero2")).sendKeys(2);
+            
+            
+            
            expect(element(by.id("resultado")).getText()).toBe("4");
         });
     });
